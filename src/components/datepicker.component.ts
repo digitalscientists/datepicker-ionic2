@@ -372,7 +372,8 @@ export class DatePickerComponent {
      * @returns {void} 
      * @memberof DatePickerComponent
      */
-    public selectDate(date: Date): void {
+    public selectDate(date: Date): void {      
+        this.config.ionClicked.emit(date)          
         if (this.isDisabled(date)) return;
         this.selectedDate = date;
         this.selectedDate.setHours(0, 0, 0, 0);

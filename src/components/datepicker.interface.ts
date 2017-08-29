@@ -9,6 +9,7 @@ export interface DatePickerData {
     ionChanged: EventEmitter<Date>,
     ionSelected: EventEmitter<Date>,
     ionCanceled: EventEmitter<void>,
+    ionClicked: EventEmitter<Date>,
     headerClasses?: string[],
     bodyClasses?: string[],
     date?: Date
